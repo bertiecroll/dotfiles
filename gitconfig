@@ -1,0 +1,10 @@
+[user]
+	name = Bertie Croll
+	email = bert.croll@gmail.com
+[core]
+	excludesfile = /Users/B/.gitignore_global
+[alias]
+	br = branch
+	co = checkout
+	fa = fetch --all --prune
+
