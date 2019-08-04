@@ -22,3 +22,6 @@ function tab() {
     end tell
 EOF
 }
+
+# Git completion
+test -f ~/.git-completion.bash && . $_
