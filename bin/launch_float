@@ -1,0 +1,15 @@
+#!/bin/bash
+. ~/.bash_profile
+
+cd ~/Dev/float_yard/Float;
+
+if [ $1 = rails ]
+then
+  tab bin/rails s -p 5000;
+else
+  tab be foreman start;
+fi
+
+tab redis-server;
+tab "cd frontend && be grunt dev";
+tab "cd web-client && yarn build:dev";
