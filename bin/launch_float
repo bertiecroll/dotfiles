@@ -3,8 +3,7 @@
 
 cd ~/Dev/float_yard/Float;
 
-if [ $1 = rails ]
-then
+if [ "$1" == "rails" ]; then
   tab bin/rails s -p 5000;
 else
   tab be foreman start;
