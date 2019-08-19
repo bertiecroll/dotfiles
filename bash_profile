@@ -1,6 +1,11 @@
 export PATH="/usr/local/bin:~/.dotfiles/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
 
+# Auto start of rbenv on load
 eval "$(rbenv init -)"
+
+# Default editor vs code
+export EDITOR='code -n -w'
 
 alias be="bundle exec"
 
@@ -23,5 +28,5 @@ function tab() {
 EOF
 }
 
-# Git completion
+# Allow the execution of the git autocomplete script if it present
 test -f ~/.git-completion.bash && . $_
