@@ -6,8 +6,8 @@
 [alias]
 	br = branch
 	co = checkout
+	cm = checkout master
 	fa = fetch --all --prune
 	undo = reset HEAD~1
 	redo = reset "HEAD@{1}"
 	wip = !git add . && git commit -m "WiP"
-
