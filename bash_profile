@@ -1,5 +1,6 @@
 export PATH="/usr/local/bin:~/.dotfiles/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 # Auto start of rbenv on load
 eval "$(rbenv init -)"
@@ -8,6 +9,7 @@ eval "$(rbenv init -)"
 export EDITOR='code -n -w'
 
 alias be="bundle exec"
+alias floatdir="cd ~/Dev/float_yard/Float"
 
 # Adds git branch with colour to PS1
 parse_git_branch() {
